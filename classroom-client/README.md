@@ -1,8 +1,33 @@
-# React + Vite
+# Project Set up Guideline
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 1. Create Firebase Project
 
-Currently, two official plugins are available:
+- Create a new Firebase Project
+- Create Web APP
+- Copy App Credentials
+- Create .env.local file & add Credentials like this
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+VITE_apiKey=*******************************
+VITE_authDomain=***************************
+VITE_projectId=****************************
+VITE_storageBucket=************************
+VITE_messagingSenderId=********************
+VITE_appId=********************************
+```
+
+- Allow Email Authentication and Google Authentication from firebase
+
+### 2. install dependencies for client
+
+Open Client code and run this
+
+```bash
+npm install
+```
+
+After that run your code
+
+```bash
+npm run dev
+```

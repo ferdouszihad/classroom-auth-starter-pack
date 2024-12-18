@@ -39,6 +39,10 @@ async function run() {
 }
 run().catch(console.dir);
 
+app.get("/", (req, res) => {
+  res.send("Server is Running");
+});
+
 app.listen(port, () => {
   console.log(`SERVER-RUNNING\nPORT - ${port}`);
 });
